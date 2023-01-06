@@ -83,3 +83,16 @@ body {
     }
   }
 }
+
+.table {
+  border: 3px solid white;
+  &__grid {
+    color: white;
+    &--coins {
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
