@@ -1,0 +1,14 @@
+{
+  "name": "blockchair",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.sass css/style.css -w"
+  },
+  "author": "Qolizade",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
