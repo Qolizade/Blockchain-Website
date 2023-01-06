@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background-color: #171717;
+}
+.wrapper__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.search__container {
+  background-color: #1d1d1d;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search__element {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.search__element h3 {
+  align-self: center;
+  margin-right: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.search__element--list {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  max-height: 500px;
+  overflow-y: scroll;
+  z-index: 10;
+}
+
+.search__element,
+.search__element--control {
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  border: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  outline: none;
+  color: #292929;
+  width: 350px;
+}
+
+.logo {
+  padding: 1rem 0;
+  border-bottom: 2rem solid #292929;
+}
+.logo p {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+}
+.logo p span {
+  color: #d4aa11;
+}
