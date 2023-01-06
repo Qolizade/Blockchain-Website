@@ -6,18 +6,17 @@ const resultGrid = document.getElementById("table-grid");
 
 var HEADLINE_COINS = "https://api.blockchair.com/stats";
 
-fetch(HEADLINE_COINS,
-  {
-    method: "GET",
-    async: true,
-    scroosDomain: true,
-  }).then((response)=>{
-    if(response.ok){
-      response.json().then((json)=>{
-        console.log(json.data)
-      })
-    }
-  });
+fetch(HEADLINE_COINS, {
+  method: "GET",
+  async: true,
+  scroosDomain: true,
+}).then((response) => {
+  if (response.ok) {
+    response.json().then((json) => {
+      console.log(json.data.bitcoin.data);
+    });
+  }
+});
 
 window.onload = () => {
   fetchHeadlines();
