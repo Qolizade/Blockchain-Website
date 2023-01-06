@@ -14,7 +14,7 @@ fetch(HEADLINE_COINS,
   }).then((response)=>{
     if(response.ok){
       response.json().then((json)=>{
-        console.log(json.data.ethereum)
+        console.log(json.data)
       })
     }
   });
